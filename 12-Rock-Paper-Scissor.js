@@ -41,7 +41,7 @@ function playGame(playerMove) {
   const computerMove = pickComputerMove();
   let result = '';
   
-  if (playerMove === 'Scissors') {
+  if (playerMove === 'scissors') {
     if (computerMove === 'Scissors') {
       result = 'Tie.';
     } else if (computerMove === 'Rock') {
@@ -50,7 +50,7 @@ function playGame(playerMove) {
       result = 'You win.';
     }
 
-  } else if (playerMove === 'Paper') {
+  } else if (playerMove === 'paper') {
     if (computerMove === 'Paper') {
       result = 'Tie.';
     } else if (computerMove === 'Rock') {
@@ -59,7 +59,7 @@ function playGame(playerMove) {
       result = 'You lose.';
     }
     
-  } else if (playerMove === 'Rock') {
+  } else if (playerMove === 'rock') {
     if (computerMove === 'Rock') {
       result = 'Tie.';
     } else if (computerMove === 'Paper') {
