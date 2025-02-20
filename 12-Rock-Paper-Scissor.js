@@ -41,7 +41,7 @@ function playGame(playerMove) {
   const computerMove = pickComputerMove();
   let result = '';
   
-  if (playerMove === 'scissors') {
+  if (playerMove === 'Scissors') {
     if (computerMove === 'Scissors') {
       result = 'Tie.';
     } else if (computerMove === 'Rock') {
@@ -50,7 +50,7 @@ function playGame(playerMove) {
       result = 'You win.';
     }
 
-  } else if (playerMove === 'paper') {
+  } else if (playerMove === 'Paper') {
     if (computerMove === 'Paper') {
       result = 'Tie.';
     } else if (computerMove === 'Rock') {
@@ -59,7 +59,7 @@ function playGame(playerMove) {
       result = 'You lose.';
     }
     
-  } else if (playerMove === 'rock') {
+  } else if (playerMove === 'Rock') {
     if (computerMove === 'Rock') {
       result = 'Tie.';
     } else if (computerMove === 'Paper') {
@@ -85,7 +85,7 @@ function playGame(playerMove) {
     .innerHTML = result;
 
   document.querySelector('.js-moves')
-    .innerHTML = `You <img src="./images/${playerMove}-image.png" alt="" class="image"> <img src="./images/${computerMove}-image.png" alt="" class="image"> Computer`;
+    .innerHTML = `You <img src="./images/${playerMove}-image-js.png" alt="" class="image"> <img src="./images/${computerMove}-image.png" alt="" class="image"> Computer`;
 
   //       alert(`You have picked ${playerMove}. Computer picked ${computerMove}. ${result}
   // Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`); 
